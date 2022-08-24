@@ -6,7 +6,7 @@ oikein = 0
 while len(rivi) <= 6:
     try:
         numero = int(input("Anna lottorivin numero välillä 1-42: "))
-        if numero not in range(0,42):
+        if numero not in range(0,43):
             print("Voit antaa numeron vain välillä 0-42")
         elif numero not in rivi:
             rivi.append(numero)
