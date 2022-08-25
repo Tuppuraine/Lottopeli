@@ -2,6 +2,7 @@ from random import randint
 rivi = []
 arvottu_rivi = []
 oikein = 0
+voittosummat = [0, 0, 0, 0, 100, 1000, 10000, 100000]
 
 while len(rivi) <= 6:
     try:
@@ -24,4 +25,4 @@ for numero in rivi:
     if numero in arvottu_rivi:
         oikein += 1
 
-print(f"arvottu rivi oli: {arvottu_rivi}, sinun rivisi oli {rivi}. Sait {oikein} oikein.")
+print(f"arvottu rivi oli: {arvottu_rivi}, sinun rivisi oli {rivi}. Sait {oikein} oikein. Voitit {voittosummat[oikein]} euroa")
